@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <title>test</title>
+    
+    
+    <script>
+        
+        window.onload = function() {
+            
+            var btn = document.querySelector('#btn');
+            
+            
+            var form = document.querySelector('#form');
+            form.onsubmit = function () {
+                
+                var name = document.querySelector('#name').value;
+                var pn = document.querySelector('#pn').value;
+             
+                
+                if (name.trim().length < 1){
+                    alert('이름을 입력해 주세요.');
+                    return false;
+                }
+                
+                if (pn.trim().length < 1){
+                    alert('주민등록번호를 입력해주세요.');
+                    return false;
+                }
+                
+          
+                alert('회원가입을 축하합니다.');
+                return true;
+                
+            };
+            
+           
+            
+            
+        }
+    </script>
+    
+    <style>
+        .border{
+            width: 400px; height: 220px;
+            border: 2px solid gray
+        }
+        
+        input{
+            border-color: darkgray;
+        }
+        
+        #a{
+            position: relative;
+            left: 10px;
+            top: 10px;
+        }
+        
+        #b{
+            position: relative;
+            left: 10px;
+            font-size: 20px;
+            font-weight: 600
+        }
+        
+        #c{
+            position: relative;
+            left: 10px;
+            font-size: 20px;
+            font-weight: 600
+        }
+        
+        #d{
+            position: relative;
+            left: 10px;
+        }
+        
+        #e{
+            position: relative;
+            left: 10px;
+           
+        }
+        
+        #cl{
+            background-color: skyblue;
+            position: relative;
+            left: 170px;
+            font-size: 15px;
+        }
+        
+        #name{
+            position: relative;
+            right: -90px;
+            font-size: 16px;
+        }
+        
+        #pn{
+            position: relative;
+            right: -10px;
+            font-size: 16px;
+            
+        }
+        
+        #pn2{
+            position: relative;
+            
+            font-size: 16px;
+        }
+        
+    </style>          
+    
+    <body>
+        
+        <h1> 실명확인 회원가입 </h1>
+        
+       
+        <div class="border">
+         <form id="form" >
+        <div id="a">
+        <input type="radio" name="no" value="1">아이핀(I-Pin)
+        <input type="radio" name="no" value="2" checked>주민등록번호
+        </div>    
+        <br>    
+        <div id="b">이름 <input id="name" type="text" size="25"></div>
+        <br>
+       <div id="c">주민등록번호 <input id="pn" size="10">
+                            -<input id="pn2" type="password" size="10"></div>
+        <br>
+        <div id="d"><input name="ch" id="ch" type="checkbox"> 주민등록번호 처리에 동의합니다.</div>
+        <hr>     
+             <div id="e"><input id="cl" type="submit" value="확인" ></div>
+        </form>
+    
+        </div>
+        
+    </body>
+    
+</html>

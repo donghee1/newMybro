@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>WEB PAGE</title>
+        
+        <!--웹 폰트 설정-->
+        <link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="">
+        
+        
+        <!--스타일 초기화(기본값을 정리한다) 폰트 설정-->
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                font-size: 100%;
+            }
+            a{
+                /*A 테그의 밑줄 제거*/
+                text-decoration: none; /*A테그 라인이 사라진다*/
+                
+            }
+            li{
+                /*리스트 도트 제거*/
+                list-style: none; /*ul 타입의 도트를 없애준다*/
+                
+            }
+            
+            body {
+                /*폰트 모양 지정*/
+                font-family: 'Poor Story', cursive;
+                background-color: #EEEEEE;
+            }
+            
+            img{
+                width: 480px;
+                height: 240px;
+            }
+            
+            
+            
+        </style>
+        
+        <style>
+            /*제일큰 사이즈에 박스를 만든다*/
+            .main_wrap {
+                width: 960px;
+               
+                
+                /*블럭의 배경색*/
+                background-color: #FFFFFF;
+                
+                /*블럭을 수평방향으로 중앙 배치*/
+                margin: 0 auto;
+                
+                /*위 간격 조정*/
+                margin-top: 30px;
+                margin-bottom: 30px;
+                
+                /*테두리 설정*/
+                border:  1px solid #DDDDDD;
+                border-radius: 5px;
+                
+                /*모서리를 둥글게*/
+                border-radius: 5px;
+                
+                /*블럭 내부 컨텐츠와의 간격*/
+                padding: 15px;
+                                
+            }
+            
+        </style>
+        
+        <style>
+            #main_menu1 {
+                height: 35px;
+                border-top: 1px solid #666666;
+                border-bottom: 1px solid #aaaaaa;
+               
+               
+            
+            }
+          .main_menu {
+               
+              /*메뉴1 영역에서*/
+                float: left;
+                
+              /*li 메뉴들을 수평으로 정렬*/
+                overflow: hidden;
+              
+              
+            }
+            .search_box {
+                float: right;
+            }
+            
+            /*메뉴 설정*/
+            .main_menu>li{
+                
+                /*li 영역을 수평방향으로 정렬*/
+                float: left;
+                
+                height: 35px;
+                /*텍스트의 수직방향의 중앙에 배치*/
+                
+                line-height: 35px;
+                padding: 0 15px; /*위아래 0 좌우 15px*/
+                
+            }
+            
+            .main_menu>li:hover{
+                background-color: #000000;
+                color: #FFFFFF;
+            }
+            /*서치박스 설정*/
+            
+            .search_box {
+                height: 22px;
+                padding-top: 2.5px;
+                margin-right: 10px;
+            }
+            
+            ,search_box>input[type=text] {
+                height: 27px;
+                vertical-align: middle;
+                border: 1px solid #aaaaaa;
+               border-radius: 11px 0 0 11px;
+                
+                
+            }
+            
+            .search_box>input[type=submit]{
+                height: 24px;
+                width: 40px;
+                vertical-align: middle;
+                border: 1px solid #aaaaaa;
+                margin-left: -1px;
+                border-radius: 0 12px 12px 0
+                
+                    
+            }
+            
+        </style>
+        
+        <!--본문 설정-->
+        <style>
+            #content {
+                overflow: hidden;
+            }
+        
+            #main_section {
+                float: left;
+                width: 650px;
+                padding: 15px;
+            }
+            
+            #main_aside {
+                float: right;
+                width: 200px
+                    
+            }
+            
+            .basic_article {
+                line-height: 160%;
+                border: 1px solid #AAAAAA;
+                margin-top: 20PX;
+                
+                
+            }
+            
+            .article_title{
+                font-weight: normal;
+                font-size: 2.0em;
+                margin: 15px 0;
+                
+                
+            }
+            
+            .basic_article>p {
+                padding: 10px 0;
+            }
+            
+            
+        </style>
+        
+        /*aside 설정*/
+        <style>
+            
+            #main_aside>h1 {
+                margin-top: 20px;
+                font-size: 1.2em;
+                
+            }
+            
+            #main_aside>ul {
+                
+                margin-left: 10px;
+                line-height: 160%;
+            }
+        
+        </style>
+        
+        
+        <!--footer 설정-->
+        <style>
+            #footer{
+                text-align: center;
+                color: blueviolet;
+                font-size: 12px;
+            }
+            
+        
+        </style>
+        
+    </head>
+    <body>
+        
+        <div class="main_wrap">
+    
+        <header id="main_header">
+        
+            <h1 class="main_title">HTML5 Example Preview</h1>
+            <p>html5,css3 테스트 페이지</p>
+
+            </header>
+           <!-- header end --> 
+            
+            
+            <!--네비게이션 시작-->
+        <nav id="main_menu1">
+            <ul class="main_menu">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>javaScript</li>
+                
+            </ul>
+            <div class="search_box">
+                <input type="text"><input type="submit" value="검색">
+            </div>
+        </nav>
+        <!--네비게이션 끝-->     
+           
+        
+        <!--본문 시작-->
+        <div id="content">
+            <section id="main_section">
+            <article class="basic_article">
+                <h1 class="articl_title">타이틀</h1>
+                <p>2018년 4월 6일</p>
+                <img src="25.jpg">
+                <p>
+                헤이즈가 실시간 검색어에 오른 가운데 사진 한 장이 이목을 집중시킨다.
+                과거 헤이즈는 자신을 소개하며  "음악은 기본으로 하고 운동을 하고 있다"고 밝혔다.
+                    공개된 자료화면속 헤이즈는 초밀착 운동복을 입은채 운동을 하고 있는 모습으로 아찔한 명품애플힙이 눈길이 간다.
+                    특히 군살하나없는 탄탄한 몸매는 더욱 시선을 사로잡는다.
+                    누리꾼들은 "헤이즈 대박", "헤이즈 노래도 잘하고 얼굴도 이쁘고", "헤이즈 진짜 몸매 군살하나없고 부럽다" 등  다양한 반응을 보였다.
+                </p>
+                    
+                </article>
+                 <article class="basic_article">
+                <h1 class="articl_title">타이틀</h1>
+                <p>2018년 4월 6일</p>
+                <img src="25.jpg">
+                <p>
+                헤이즈가 실시간 검색어에 오른 가운데 사진 한 장이 이목을 집중시킨다.
+                과거 헤이즈는 자신을 소개하며  "음악은 기본으로 하고 운동을 하고 있다"고 밝혔다.
+                    공개된 자료화면속 헤이즈는 초밀착 운동복을 입은채 운동을 하고 있는 모습으로 아찔한 명품애플힙이 눈길이 간다.
+                    특히 군살하나없는 탄탄한 몸매는 더욱 시선을 사로잡는다.
+                    누리꾼들은 "헤이즈 대박", "헤이즈 노래도 잘하고 얼굴도 이쁘고", "헤이즈 진짜 몸매 군살하나없고 부럽다" 등  다양한 반응을 보였다.
+                </p>
+                    
+                </article>
+            </section>
+            <aside id="main_aside">
+            <h1>카테고리</h1>
+            <ul>
+                <li><a href="#">데이터</a></li>
+                <li><a href="#">데이터</a></li>
+                <li><a href="#">데이터</a></li>
+                <li><a href="#">데이터</a></li>
+                <li><a href="#">데이터</a></li>         
+                </ul>
+            
+            <h1>최근 글</h1>
+                <ul>
+                     <li><a href="#">데이터</a></li>
+                     <li><a href="#">데이터</a></li>
+                     <li><a href="#">데이터</a></li>
+                     <li><a href="#">데이터</a></li>
+                     <li><a href="#">데이터</a></li>
+                    
+                </ul>
+            
+                
+                
+            </aside>
+             </div>
+       </div>
+        
+        <footer id="footer">
+            <h1>@2018 bitcamp.</h1>
+        
+        </footer>
+        
+    
+    </body>
+    
+    
+    
+</html>
